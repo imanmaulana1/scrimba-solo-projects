@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <form id="myForm">
+        <header>
+          <h1>Metric/Imperial Unit Conversion</h1>
+          <input type="number" name="input" id="input" />
+          <button type="submit" id="btn-convert">Convert</button>
+        </header>
+      </form>
+      <section class="output">
+        <article class="card">
+          <h2>Length (Meter/Feet)</h2>
+          <p id="length"></p>
+        </article>
+        <article class="card">
+          <h2>Volume (Liters/Gallons)</h2>
+          <p id="volume"></p>
+        </article>
+        <article class="card">
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <p id="mass"></p>
+        </article>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
