@@ -178,10 +178,6 @@ function showModal() {
 document.getElementById('myform').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const totalWrapper = document.querySelector('.total-wrapper');
-  const orderWrapper = document.querySelector('.order-wrapper');
-  const successMsg = document.querySelector('.success');
-
   username = document.getElementById('name').value;
   if (username) {
     const totalWrapper = document.querySelector('.total-wrapper');
