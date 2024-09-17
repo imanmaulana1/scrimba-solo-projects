@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Smythe', system-ui;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.header {
+  background-image: url('./images/bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+header p {
+  color: #fff;
+  font-size: 22.422px;
+  line-height: 13.798px;
+}
+
+.menus {
+  display: grid;
+  gap: 45px;
+  margin-top: 67px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 51px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.item-graphic {
+  font-family: Inter;
+  font-size: 78.72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 98.4px;
+  letter-spacing: -1.574px;
+}
+
+.item-content {
+  flex: 1;
+  display: grid;
+  gap: 8px;
+}
+
+.item-title {
+  color: #000;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.item-description {
+  color: #8b8b8b;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.item-price {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.item-cta {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1.5px solid #dedede;
+  cursor: pointer;
+  color: #3c3c3c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px; /* 75% */
+}
+
+.order-wrapper {
+  margin-top: 45px;
+}
+
+.order-item-wrapper {
+  margin-top: 64px;
+  display: grid;
+  gap: 9px;
+  padding-bottom: 31px;
+  border-bottom: 2px solid #393333;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-item-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.order-title {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+}
+
+.order-item-remove-btn {
+  background-color: transparent;
+  border: none;
+  color: #bbb;
+  font-family: Verdana;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.total-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 53px;
+  margin-top: 14px;
+  margin-bottom: 53px;
+}
+
+.total-price-title {
+  color: #0e0e0e;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.total-wrapper .item-price {
+  text-align: end;
+}
+
+.total-wrapper .btn-payment {
+  grid-column: 1/3;
+  padding-block: 18px 18px;
+  background: #16db99;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Modal Container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal-content {
+  max-width: 600px;
+  width: 90%;
+  margin: 30% auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 3.89px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.modal-title {
+  color: #000;
+  font-family: Verdana;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.119px;
+  margin-bottom: 46px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 17px 27px 14px 27px;
+  border-radius: 4px;
+  border: 1px solid #757575;
+  margin-bottom: 23px;
+  color: #757575;
+  font-family: Verdana;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.119px;
+}
+
+.modal-content .btn-payment {
+  width: 100%;
+  padding-block: 18px 18px;
+  margin-top: 23px;
+  background: #16db99;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.success {
+  display: none;
+  width: 100%;
+  padding: 51px 29px;
+  margin: 45px auto;
+  background: #ecfdf5;
+  border-radius: 3px;
+  color: #065f46;
+  font-size: 32px;
+  line-height: 32px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Restaurant Ordering App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom JS -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header container">
+      <h1>Jimmy’s Diner</h1>
+      <p>The best burgers and pizzas in town.</p>
+    </header>
+    <main class="container"></main>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2 class="modal-title">Enter card details</h2>
+        <form id="myform">
+          <div class="form-group">
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="card" class="sr-only">Card Number</label>
+            <input
+              type="number"
+              name="card"
+              id="card"
+              placeholder="Enter card number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="cvv" class="sr-only">CVV</label>
+            <input
+              type="number"
+              name="cvv"
+              id="cvv"
+              placeholder="Enter CVV"
+              required
+            />
+          </div>
+          <button type="submit" class="btn-payment">Pay</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
