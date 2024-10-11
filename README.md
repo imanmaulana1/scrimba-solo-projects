@@ -21,25 +21,16 @@ This repository contains a collection of solo projects completed during the [Scr
 **6. Restaurant Ordering App**<br>
 *Type: Native HTML CSS JavaScript*
 
-**7. Learning Journal**<br>
-*Type: Native HTML CSS JavaScript*
-
-**8. Color Scheme Generator**<br>
-*Type: Native HTML CSS JavaScript*
-
-**9. Movie Watchlist**<br>
-*Type: Native HTML CSS JavaScript*
-
-**10. Digital Business Card**<br>
+**7. Digital Business Card**<br>
 *Type: React*
 
-**11. Travel Journal**<br>
+**8. Travel Journal**<br>
 *Type: React*
 
-**12. Quizzical**<br>
+**9. Quizzical**<br>
 *Type: React*
 
-**13. Component Liblary**<br>
+**10. Component Liblary**<br>
 *Type: React*
 
 ## How to Run
